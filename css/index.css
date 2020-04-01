@@ -1,4 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&family=Raleway:wght@400;800&display=swap');
 
+:root {
+    font-family: 'Raleway', sans-serif;
+    --main-color:#1c1a36;
+    --accent-color: white;
+    color: var(--main-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+header nav h1,
+header .banner .title {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header nav .top-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+header nav .top-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .top-menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner .title {
+    color: var(--accent-color);
+}
+
+@media (min-width: 600px) {
+    header .banner {
+        background-position: top;
+    }
+}
+
+main .product-list .product-card img {
+    display: block;
+    width: 100%;
+}
+
+main .product-list .product-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 580px) {
+
+    main .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }    
+
+}
+
+@media (min-width: 660px) {
+
+    main .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+
+}
+
+@media (min-width: 980px) {
+
+    main .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }    
+
+}
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
 
 
 
