@@ -2,9 +2,9 @@
 
 :root {
     font-family: 'Raleway', sans-serif;
-    --main-color:#1c1a36;
+    --main-color: orange;
     --accent-color: white;
-    color: var(--main-color);
+    color: var( --main-color);
     scroll-behavior: smooth;
 }
 
@@ -25,6 +25,8 @@ header .banner .title {
     text-align: center;
     text-transform: uppercase;
 }
+
+
 
 header nav .top-menu {
     display: flex;
@@ -143,6 +145,5 @@ main .product-list .product-card .button-container {
     background-color: black;
     color: white;
 }
-
 
 
